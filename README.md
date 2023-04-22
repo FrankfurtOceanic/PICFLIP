@@ -6,6 +6,6 @@ You can also change the gravity applied as well as the number of particles (modi
 
 Lastly, to change the cell size, use the slider then press the "r" key to reset the simulation.
 
-Be use to have all the 3rd party tools from assignment 3 before using cmake
+Be use to have all the 3rd party tools from assignment 3 before using cmake. Follow the set up as described before.
 
  

@@ -253,19 +253,10 @@ int main(void) {
 		ImGui::Text("Shortcut:\n\tspace - run/stop\n\ts     - step\n\tr     - restart\n\tv     - record\n\tESC   - exit");
 		ImGui::Text("\tright button     - add/delete heat source\n\tmiddle button    - add filament\n\tleft button drag - add force\n\tscrolling        - temperature control");
 		ImGui::Text("simTime: %6.2f", simTime);
-		ImGui::Text("srcTemp: %6.2f", pointedTemp);
-		ImGui::Text("avgTemp: %6.2f", (float)getReferenceTemperature(cur_tp));
 		ImGui::SliderInt("speed", &speed, 1, 10);
 		ImGui::Checkbox("recordFrames", &recordFrames);
-		ImGui::SliderFloat("dt", &dt, 0.0001f, 0.1f);
 		ImGui::SliderFloat("dx", &dx, 0.01f, 5.0f);
-		ImGui::SliderFloat("nv", &nv, 0.f, 20.f);
 		ImGui::SliderFloat("PIC/FLIP ratio", &PICratio, 0.f, 1.f);
-		ImGui::SliderFloat("buoyancy", &buoyancy, 0.f, 5.f);
-		ImGui::SliderFloat("srcTemp", &srcTemp, -500.f, 500.f);
-		ImGui::SliderFloat("velFactor", &velFactor, 10.f, 5000.f);
-		ImGui::SliderFloat("maxAge", &maxAge, 1.0f, 50.0f);
-		ImGui::SliderFloat("refinementThreshold", &refinementThreshold, 1.0f, 50.0f);
 		ImGui::SliderInt("iterations", &iterations, 1, 100);
 		ImGui::End();
 

@@ -1,6 +1,9 @@
 # PICFLIP
 
-A C++ implementation of the FLIP/PIC fluid method.
+## A 2d FLIP/PIC fluid based on Animating Sand as a Fluid (2005), Zhu and Bridson. 
+* Programmed methods for transferring velocities between a MAC grid and particles, solving the incompressibility constraint, and calculating the new velocities.  
+* The simulation results in realistic water looking fluids but the ratio can be adjusted to mimic liquids with different viscosities. 
+
 Here's a video with the results:  
 [![Fluids](https://img.youtube.com/vi/5IXsQ7yA04g/maxresdefault.jpg)](https://youtu.be/5IXsQ7yA04g "FLIP Fluids")  
 https://youtu.be/5IXsQ7yA04g
